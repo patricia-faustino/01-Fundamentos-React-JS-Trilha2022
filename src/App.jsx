@@ -27,7 +27,7 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: "https://avatars.githubusercontent.com/u/69044157?v=4",
+      avatarUrl: "https://resources.workable.com/wp-content/uploads/2017/08/shutterstock_703336915.jpg",
       name: "Maria Amaranto",
       role: "UX/UI @Test",
     },
@@ -54,6 +54,7 @@ function App() {
           {posts.map((post) => {
             return (
               <Post
+              key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
